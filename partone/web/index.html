@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Dungeon - Part One</title>
+    <style>body {font-family:sans-serif;font-size:7pt;}</style>
+</head>
+
+<body style="background-color:#111111;">
+
+    <div style="background-color:#FFFFFF;margin:5px;position:absolute;left:5px;width:900px;height:70px; border: 2px solid black;   border-radius: 15px;">
+
+      <form style="font-size:10pt;">
+
+        <div style="position:absolute;top:20px;width:140px;left:10px;">Map Width
+        <input type="range" min="20" max="200" id="MapWidth" value="120"  />
+        </div>
+
+        <div style="position:absolute;top:20px;width:130px;left:150px;">Map Height
+        <input type="range" min="20" max="100" id="MapHeight" value="40"  />
+        </div>
+
+        <div style="position:absolute;top:20px;left:300px;width:150px;">Max Room Width
+        <input type="range" min="5" max="20" id="RoomWidth" value="8"  />
+        </div>
+
+        <div style="position:absolute;top:20px;left:450px;width:140px;">Max Room Height
+        <input type="range" min="5" max="20" id="RoomHeight" value="8"  />
+        </div>
+
+        <div style="position:absolute;top:20px;left:600px;width:140px;">Room Count
+        <input type="range" min="1" max="50" id="RoomCount" value="8"  />
+        </div>
+
+        <div style="position:absolute;top:40px;left:750px;width:140px;">
+        <input type="button" id="RefreshButton" value="Refresh"  style="width:120px;"/>
+        </div>
+
+        <pre id="visualMap" style="color:#000088;position:absolute;top:80px;padding: 3px 5px; border: 3px double silver;background: #008800;">
+        </pre>
+
+      </form>
+      </div>
+
+    <script type="application/dart" src="main.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+</body>
+</html>
